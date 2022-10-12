@@ -6,7 +6,7 @@ html {
     padding: 1vw;
     display: grid;
     grid-template-columns: repeat(13, 1fr); 
-    grid-template-rows: repeat(24, 1fr);
+    grid-template-rows: repeat(18, 1fr);
     grid-template-areas: 
     "A1 A2 A3 A4 A5 A6 A7 A8 A9 A10 A11 A12 A13";
 }
@@ -73,10 +73,11 @@ html {
 
 .animated-presentation {
   grid-column: 10 / 14;
-  grid-row: 3 / 7;
+  grid-row: 2 / 7;
   width: 55vw;
   max-width: 100%;
   height: auto;
+  margin-top: 5vw;
 }
 
 a.tooltip {
@@ -302,20 +303,24 @@ a.tooltip:hover {
   100% {
     transform: translateX(0);
   }
+
   10%,
   30%,
   50%,
   70% {
     transform: translateX(-10px);
   }
+
   20%,
   40%,
   60% {
     transform: translateX(10px);
   }
+
   80% {
     transform: translateX(8px);
   }
+
   90% {
     transform: translateX(-8px);
   }
