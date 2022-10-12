@@ -3,63 +3,56 @@ html {
 }
 
 .grid-container {
+    padding: 1vw;
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr 1fr; 
-    grid-template-rows: 70px 50px 70px 200px 200px 200px 200px;
+    grid-template-columns: repeat(13, 1fr); 
+    grid-template-rows: repeat(24, 1fr);
+    grid-template-areas: 
+    "A1 A2 A3 A4 A5 A6 A7 A8 A9 A10 A11 A12";
 }
 
   .logo_infranet {
-    grid-column: 3;
+    grid-column: 6 / 9;
     grid-row: 1;
     margin: auto;
-    margin-top: 40px;
     width: 100%;
-    max-width: 200px;
+    max-width: 15vw;
     height: auto;
   }
 
-  #home {
-    display: grid;
-    grid-column: 1;
-    grid-row-start: 2;
-    justify-items: center;
-    align-items: center;
-    font-size: 23px;
-    text-shadow: 2px 2px 5px green;
-  }
-
-  #about {
-    display: grid;
-    grid-column: 2;
-    grid-row-start: 2;
-    justify-items: center;
-    align-items: center;
-    font-size: 23px;
+  .home, .about, .contact, .login {
+    margin: auto;
     text-shadow: 2px 2px 5px #ea00ff;
+    font-size: 1.5vw;
+    background-color: white;
+    border-radius: 1vw;
+    position: sticky;
+    top: 1vw;
+    size: 4vw;
+    background-color: white;
+    padding: 1vw;
+    box-shadow: #ea00ff 0px 4px 8px -2px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 1vw;
   }
-
-  #contact {
-    display: grid;
-    grid-column: 4;
-    grid-row-start: 2;
-    justify-items: center;
-    align-items: center;
-    font-size: 23px;
-    text-shadow: 2px 2px 5px #ea00ff;
-  }
-
-  #login {
-    display: grid;
-    grid-column: 5;
-    grid-row-start: 2;
-    justify-items: center;
-    align-items: center;
-    font-size: 23px;
-    text-shadow: 2px 2px 5px #ea00ff;
-  }
-
-  .grid-container a:hover { 
+  .home a:hover, .about a:hover, .contact a:hover, .login a:hover{
     border-bottom: 3px solid #ea00ff;
+  }
+
+  .home {
+    grid-area: A2;
+    text-shadow: 2px 2px 5px #02ff06;
+  }
+
+  .about {
+    grid-area: A4;
+  }
+
+  .contact {
+    grid-area: A10;
+  }
+
+  .login {
+    grid-area: A12;
   }
 
   a {
@@ -67,64 +60,194 @@ html {
     color: black;
     font-weight: bold;
   }
+ 
+.introduction-box {
+  grid-column: 2 / 11;
+  grid-row: 2 / 7;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-weight: bold;
+  font-size: 1.2vw;
+  color: #390055cb;
+  margin-top: 5vw;
+}
 
-  .banner {
-    grid-column: 1 / 6;
-    grid-row: 3;
-    width: 100%;
-    max-width: 100%;
-    height: 340px;
-    margin: auto;
-  }
+.animated-presentation {
+  grid-column: 10 / 14;
+  grid-row: 3 / 7;
+  width: 55vw;
+  max-width: 100%;
+  height: auto;
+}
 
-  .arrow_left {
-    grid-column: 1;
-    grid-row: 4;
-    width: auto;
-    max-width: 100%;
-    height: 100px;
-    margin: auto;
-  }
+a.tooltip {
+  font-size: 1.5vw;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  outline: none;
+  color: white;
+  -webkit-animation: blink 2.75s linear infinite;
+  -moz-animation: blink 2.75s linear infinite;
+  -ms-animation: blink 2.75s linear infinite;
+  -o-animation: blink 2.75s linear infinite;
+  animation: blink 2.75s linear infinite;
+}
 
-  .arrow_right {
-    grid-column: 5;
-    grid-row: 4;
-    width: auto;
-    max-width: 100%;
-    height: 100px;
-    margin: auto;
-  }
+@-webkit-keyframes blink { 
+   0% {opacity: 1;}
+   50%{opacity:1;}
+   100%{opacity:0;}
+}
+@-moz-keyframes blink { 
+   0% {opacity: 1;}
+   50%{opacity:1;}
+   100%{opacity:0;}
+}
+@keyframes blink { 
+   0% {opacity: 1;}
+   50%{opacity:1;}
+   100%{opacity:0;}
+}
 
-  .banner_text {
-    grid-column: 2 / 5;
-    grid-row: 4;
-    margin: auto;
-    text-align: center;
-    font-size: 20px;
-  }
+a.tooltip:hover {
+  color: black;
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
 
-  .home_presentation {
-    grid-column: 4 / 6;
-    grid-row: 5;
-    margin-top: 20px;
-    text-align: center;
-    max-width: 100%;
-    width: auto;
-    height: 420px;
-  }
+.btn-1 {
+  grid-column: 2 / 4;
+  grid-row: 4;
+  margin: auto;
+  border-radius: 0.8vw;
+  background-color: purple;
+  padding: 0.2vw;
+}
 
-  .description_text {
-    grid-column: 1 / 4;
-    grid-row: 6;
-    margin: auto;
-    text-align: center;
-    font-size: 20px;
-  }
+.btn-2 {
+  grid-column: 4 / 6;
+  grid-row: 4;
+  margin: auto;
+  border-radius: 0.8vw;
+  background-color: plum;
+  padding: 0.2vw;
+}
 
-  .description_text2 {
-    grid-column: 1 / 4;
-    grid-row: 5;
-    margin: auto;
-    text-align: center;
-    font-size: 20px;
-  }
+.review-1, .review-2 , .review-3 {
+  display: grid;
+  padding: 0.8vw;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-weight: bold;
+  box-shadow: #ea00ff 0px 4px 8px -2px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 1vw;
+}
+
+.review-1 > img, .review-2 > img, .review-3 > img {
+  grid-column: 1 / 5;
+  grid-row: 1;
+  margin: auto;
+  width: 100%;
+  max-width: 7vw;
+  height: auto;
+}
+
+.review-1 > p, .review-2 > p, .review-3 > p {
+  grid-column: 1 / 5;
+  grid-row: 2;
+  margin: auto;
+  color: #232323cb;
+}
+
+.review-1 > h2, .review-2 > h2, .review-3 > h2 {
+  grid-column: 1 / 5;
+  grid-row: 3;
+  margin: auto;
+  text-align: center;
+}
+
+.review-1 {
+  grid-column: 2 / 5;
+  grid-row: 5 / 7;
+  margin-top: 5vw;
+}
+
+.review-2 {
+  grid-column: 6 / 9;
+  grid-row: 5 / 7;
+  margin-top: 5vw;
+}
+
+.review-3 {
+  grid-column: 10 / 13;
+  grid-row: 5 / 7;
+  margin-top: 5vw;
+}
+
+.article-1 {
+  display: grid;
+  grid-column: 2 / 12;
+  grid-row: 6 / 12;
+  padding: 0.8vw;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-weight: bold;
+  margin: auto;
+  color: #390055cb;
+}
+
+.article-1 > img {
+  grid-column: 2 / 8;
+  grid-row: 1 / 5;
+  width: 100%;
+  max-width: 25vw;
+  height: auto;
+  margin: auto;
+}
+
+.article-2 {
+  display: grid;
+  grid-column: 5 / 10;
+  grid-row: 11;
+  padding: 0.8vw;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-weight: bold;
+  margin: auto;
+  color: #390055cb;
+  border-radius: 1vw;
+  background-color: white;
+}
+
+.article-2 > p {
+  grid-column: 1 / 5;
+  grid-row: 2;
+  margin: auto;
+  color: #232323cb;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+.article-2 > p {
+  position: sticky;
+  top: 1vw;
+  background-color: white;
+  border-radius: 3vw;
+}
+
+.mac-screen-img {
+  grid-column: 2 / 13;
+  grid-row: 11 / 18;
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+  margin: auto;
+}
+
+.mobile-infranet {
+  display: grid;
+  grid-column: 2 / 13;
+  grid-row: 17 / 20;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-weight: bold;
+  font-size: 1.2vw;
+  color: #390055cb;
+  margin: auto;
+  text-align: center;
+}
