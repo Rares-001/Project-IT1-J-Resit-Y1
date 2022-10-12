@@ -8,7 +8,7 @@ html {
     grid-template-columns: repeat(13, 1fr); 
     grid-template-rows: repeat(24, 1fr);
     grid-template-areas: 
-    "A1 A2 A3 A4 A5 A6 A7 A8 A9 A10 A11 A12";
+    "A1 A2 A3 A4 A5 A6 A7 A8 A9 A10 A11 A12 A13";
 }
 
   .logo_infranet {
@@ -243,7 +243,7 @@ a.tooltip:hover {
 .mobile-infranet {
   display: grid;
   grid-column: 2 / 13;
-  grid-row: 17 / 20;
+  grid-row: 16 / 20;
   font-family: Comic Sans MS, Comic Sans, cursive;
   font-weight: bold;
   font-size: 1.2vw;
@@ -251,3 +251,87 @@ a.tooltip:hover {
   margin: auto;
   text-align: center;
 }
+
+.supported {
+  display: flex;
+  grid-column: 2 / 13;
+  grid-row: 19 / 20;
+  justify-content: center;
+  align-items: center;
+}
+
+.supported > img {
+  grid-column: 2 / 8;
+  grid-row: 2 / 6;
+  width: 100%;
+  max-width: 10vw;
+  height: auto;
+  margin: auto;
+}
+
+.shake-horizontal {
+	animation: shake-horizontal 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.shake-horizontal-1 {
+	animation: shake-horizontal 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.shake-horizontal-2 {
+	animation: shake-horizontal 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.shake-horizontal-3 {
+	animation: shake-horizontal 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.shake-horizontal-4 {
+	animation: shake-horizontal 2.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.shake-horizontal-5 {
+	animation: shake-horizontal 3.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+.shake-horizontal-6 {
+	animation: shake-horizontal 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+
+ @keyframes shake-horizontal {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    transform: translateX(10px);
+  }
+  80% {
+    transform: translateX(8px);
+  }
+  90% {
+    transform: translateX(-8px);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
