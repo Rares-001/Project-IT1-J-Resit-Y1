@@ -1,66 +1,67 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .grid-container {
-    padding: 1vw;
-    display: grid;
-    grid-template-columns: repeat(13, 1fr); 
-    grid-template-rows: repeat(18, 1fr);
-    grid-template-areas: 
+  padding: 1vw;
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-areas:
     "A1 A2 A3 A4 A5 A6 A7 A8 A9 A10 A11 A12 A13";
 }
 
-  .logo_infranet {
-    grid-column: 6 / 9;
-    grid-row: 1;
-    margin: auto;
-    width: 100%;
-    max-width: 15vw;
-    height: auto;
-  }
+.logo_infranet {
+  grid-column: 6 / 9;
+  grid-row: 1;
+  margin: auto;
+  width: 100%;
+  max-width: 15vw;
+  height: auto;
+}
 
-  .home, .about, .contact, .login {
-    margin: auto;
-    text-shadow: 2px 2px 5px #ea00ff;
-    font-size: 1.5vw;
-    background-color: white;
-    border-radius: 1vw;
-    position: sticky;
-    top: 1vw;
-    size: 4vw;
-    background-color: white;
-    padding: 1vw;
-    box-shadow: #ea00ff 0px 4px 8px -2px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    border-radius: 1vw;
-  }
-  .home a:hover, .about a:hover, .contact a:hover, .login a:hover{
-    border-bottom: 3px solid #ea00ff;
-  }
+.home, .about, .contact, .login {
+  margin: auto;
+  text-shadow: 2px 2px 5px #ea00ff;
+  font-size: 1.5vw;
+  background-color: white;
+  border-radius: 1vw;
+  position: sticky;
+  top: 1vw;
+  size: 4vw;
+  background-color: white;
+  padding: 1vw;
+  box-shadow: #ea00ff 0px 4px 8px -2px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 1vw;
+}
 
-  .home {
-    grid-area: A2;
-    text-shadow: 2px 2px 5px #02ff06;
-  }
+.home a:hover, .about a:hover, .contact a:hover, .login a:hover {
+  border-bottom: 3px solid #ea00ff;
+}
 
-  .about {
-    grid-area: A4;
-  }
+.home {
+  grid-area: A2;
+  text-shadow: 2px 2px 5px #02ff06;
+}
 
-  .contact {
-    grid-area: A10;
-  }
+.about {
+  grid-area: A4;
+}
 
-  .login {
-    grid-area: A12;
-  }
+.contact {
+  grid-area: A10;
+}
 
-  a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-  }
- 
+.login {
+  grid-area: A12;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
 .introduction-box {
   grid-column: 2 / 11;
   grid-row: 2 / 7;
@@ -92,20 +93,46 @@ a.tooltip {
   animation: blink 2.75s linear infinite;
 }
 
-@-webkit-keyframes blink { 
-   0% {opacity: 1;}
-   50%{opacity:1;}
-   100%{opacity:0;}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
-@-moz-keyframes blink { 
-   0% {opacity: 1;}
-   50%{opacity:1;}
-   100%{opacity:0;}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
-@keyframes blink { 
-   0% {opacity: 1;}
-   50%{opacity:1;}
-   100%{opacity:0;}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 a.tooltip:hover {
@@ -133,7 +160,9 @@ a.tooltip:hover {
   padding: 0.2vw;
 }
 
-.review-1, .review-2 , .review-3 {
+.review-1,
+.review-2,
+.review-3 {
   display: grid;
   padding: 0.8vw;
   font-family: Comic Sans MS, Comic Sans, cursive;
@@ -142,7 +171,9 @@ a.tooltip:hover {
   border-radius: 1vw;
 }
 
-.review-1 > img, .review-2 > img, .review-3 > img {
+.review-1>img,
+.review-2>img,
+.review-3>img {
   grid-column: 1 / 5;
   grid-row: 1;
   margin: auto;
@@ -151,14 +182,18 @@ a.tooltip:hover {
   height: auto;
 }
 
-.review-1 > p, .review-2 > p, .review-3 > p {
+.review-1>p,
+.review-2>p,
+.review-3>p {
   grid-column: 1 / 5;
   grid-row: 2;
   margin: auto;
   color: #232323cb;
 }
 
-.review-1 > h2, .review-2 > h2, .review-3 > h2 {
+.review-1>h2,
+.review-2>h2,
+.review-3>h2 {
   grid-column: 1 / 5;
   grid-row: 3;
   margin: auto;
@@ -194,7 +229,7 @@ a.tooltip:hover {
   color: #390055cb;
 }
 
-.article-1 > img {
+.article-1>img {
   grid-column: 2 / 8;
   grid-row: 1 / 5;
   width: 100%;
@@ -271,34 +306,35 @@ a.tooltip:hover {
 }
 
 .shake-horizontal {
-	animation: shake-horizontal 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+  animation: shake-horizontal 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 
 .shake-horizontal-1 {
-	animation: shake-horizontal 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+  animation: shake-horizontal 1s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 
 .shake-horizontal-2 {
-	animation: shake-horizontal 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+  animation: shake-horizontal 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 
 .shake-horizontal-3 {
-	animation: shake-horizontal 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+  animation: shake-horizontal 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 
 .shake-horizontal-4 {
-	animation: shake-horizontal 2.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+  animation: shake-horizontal 2.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 
 .shake-horizontal-5 {
-	animation: shake-horizontal 3.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+  animation: shake-horizontal 3.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 
 .shake-horizontal-6 {
-	animation: shake-horizontal 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+  animation: shake-horizontal 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 
- @keyframes shake-horizontal {
+@keyframes shake-horizontal {
+
   0%,
   100% {
     transform: translateX(0);
@@ -327,16 +363,40 @@ a.tooltip:hover {
 }
 
 
+ul {
+  position:relative;
+  display:flex;
+  flex-direction:row;
+  gap:70px;
+  margin: auto;
+}
 
+ul li {
+  list-style:none;
+  position:relative;
+  
+}
 
+ul li a  {
+  position:relative;
+  text-decoration:none;
+  font-size:1em;
+  letter-spacing:2px;
+  color:transparent;
+  -webkit-text-stroke:1px var(--clr);
+  
+}
 
+ul li a::before {
+  content:attr(data-text);
+  position:absolute;
+  color:var(--clr);
+  width:0px;
+  overflow:hidden;
+  transition:1s;
+  border-right:8px solid var(--clr);
+}
 
-
-
-
-
-
-
-
-
-
+ul li a:hover::before {
+  width:100%;
+}
