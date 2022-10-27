@@ -7,7 +7,7 @@ html {
   display: grid;
   padding: 1vw;
   grid-template-columns: repeat(13, 1fr);
-  grid-template-rows: repeat(20, 1fr);
+  grid-template-rows: repeat(8, 1fr);
 }
 
 @media only screen and (max-width: 480px) {
@@ -82,7 +82,7 @@ html {
   .about,
   .contact,
   .Admin,
-  .Student {
+  .Student{
     margin: auto;
     text-shadow: 2px 2px 5px #ea00ff;
     font-size: 4.5vw;
@@ -101,7 +101,8 @@ html {
 .home a:hover,
 .about a:hover,
 .contact a:hover,
-.Admin a:hover .Student a:hover {
+.Admin a:hover
+.Student a:hover {
   border-bottom: 3px solid #ea00ff;
 }
 
@@ -121,32 +122,51 @@ a {
 
 @media only screen and (max-width: 480px) {}
 
-* {
-  box-sizing: border-box;
+
+//*page*//
+
+.images-box {
+  display: grid;
+  grid-column: 2 / 12;
+  grid-row: 2 / 4;
 }
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-  align-content: center;
-  text-align: center;
+.option-1 {
+  display: flex;
+  grid-column: 2 / 4;
+  justify-content: space-around;
 }
 
-/* clear floats */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-  align-content: center;
+.option-2 {
+  display: flex;
+  grid-column: 4 / 6;
+  justify-content: space-around;
 }
 
-.left text {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-  align-content: center;
+.option-3 {
+  display: flex;
+  grid-column: 6 / 8;
 }
+
+.assignment {
+  width: 60vw;
+  max-width: 300%;
+  height: auto;
+}
+
+.bill {
+  width: 60vw;
+  max-width: 300%;
+  height: auto;
+}
+
+.desk {
+  width: 60vw;
+  max-width: 300%;
+  height: auto;
+}
+
+
 
 footer {
   bottom: 0;
