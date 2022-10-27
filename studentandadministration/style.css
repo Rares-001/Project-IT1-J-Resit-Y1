@@ -82,7 +82,7 @@ html {
   .about,
   .contact,
   .Admin,
-  .Student{
+  .Student {
     margin: auto;
     text-shadow: 2px 2px 5px #ea00ff;
     font-size: 4.5vw;
@@ -101,8 +101,7 @@ html {
 .home a:hover,
 .about a:hover,
 .contact a:hover,
-.Admin a:hover
-.Student a:hover {
+.Admin a:hover .Student a:hover {
   border-bottom: 3px solid #ea00ff;
 }
 
@@ -138,9 +137,10 @@ a {
 .row::after {
   content: "";
   clear: both;
-  display: table; 
+  display: table;
   align-content: center;
 }
+
 .left text {
   position: absolute;
   bottom: 8px;
