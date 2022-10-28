@@ -1,5 +1,9 @@
-html {
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+html {
   background-color: #fff;
 }
 
@@ -7,7 +11,7 @@ html {
   display: grid;
   padding: 1vw;
   grid-template-columns: repeat(13, 1fr);
-  grid-template-rows: repeat(20, 1fr);
+  //grid-template-rows: repeat(8, 1fr);
 }
 
 @media only screen and (max-width: 480px) {
@@ -19,6 +23,28 @@ html {
   }
 }
 
+
+.imageofbox {
+  width: 1200px;
+  height: auto  ;
+  display: flex;
+  flex-direction: rows;  
+
+}
+.option-1 {
+  margin-left: 28%;
+  width: 250px;
+  height: 250px;
+  display: grid;
+  grid-column: 2 / 6;
+  justify-content: space-around;
+  grid-row: 2/6;
+}
+
+.text-image {
+  display: flex;
+  justify-content: center;
+}
 
 .logo_infranet {
   grid-column: 6 / 9;
@@ -122,31 +148,56 @@ a {
 
 @media only screen and (max-width: 480px) {}
 
-* {
-  box-sizing: border-box;
+
+//*page*//
+
+
+
+.option-1 {
+  width: 250px;
+  height: 250px;
+  display: grid;
+  grid-column: 2 / 6;
+  justify-content: space-around;
+  grid-row: 2/6;
 }
 
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-  align-content: center;
-  text-align: center;
+.option-2 {
+  width: 250px;
+  height: 250px;
+  display: grid;
+  grid-column: 4 / 6;
+  justify-content: space-around;
+  grid-row: 4/6;
 }
 
-/* clear floats */
-.row::after {
-  content: "";
-  clear: both;
-  display: table; 
-  align-content: center;
+.option-3 {
+  width: 250px;
+  height: 250px;
+  display: grid;
+  grid-column: 6 / 6;
+  justify-content: space-around;
+  grid-row: 6/6;
 }
-.left text {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-  align-content: center;
+
+.assignment {
+  width: 200px;
+  height: auto;
 }
+
+.bill {
+  width: 60vw;
+  max-width: 300%;
+  height: auto;
+}
+
+.desk {
+  width: 60vw;
+  max-width: 300%;
+  height: auto;
+}
+
+
 
 footer {
   bottom: 0;
