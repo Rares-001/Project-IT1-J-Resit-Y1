@@ -19,9 +19,6 @@ html {
   }
 }
 
-
-
-
 .logo_infranet {
   grid-column: 6 / 9;
   grid-row: 1;
@@ -36,7 +33,6 @@ html {
     max-width: 0vw;
   }
 }
-
 
 .navigation-menu {
   display: flex;
@@ -54,10 +50,6 @@ html {
     margin-top: -18vw;
   }
 }
-
-
-
-
 
 .home,
 .about,
@@ -95,9 +87,6 @@ html {
   }
 }
 
-
-
-
 .home a:hover,
 .about a:hover,
 .contact a:hover,
@@ -105,31 +94,22 @@ html {
   border-bottom: 3px solid #ea00ff;
 }
 
-@media only screen and (max-width: 480px) {}
-
-
-
-
-
 a {
   text-decoration: none;
   color: black;
   font-weight: bold;
 }
 
-@media only screen and (max-width: 480px) {}
-
-
-
-
 .introduction-box-left {
-  grid-column: 2 / 9;
+  display: grid;
+  grid-column: 2 / 10;
   grid-row: 2 / 5;
   font-family: Comic Sans MS, Comic Sans, cursive;
   font-weight: bold;
   font-size: 1.2vw;
   color: #390055cb;
   margin-top: 5vw;
+  margin-left: -10%;
 }
 
 @media only screen and (max-width: 480px) {
@@ -149,8 +129,9 @@ a {
 
 
 .introduction-text {
-  grid-column: 2 / 9;
-  grid-row: 2 / 5;
+  grid-column: 1 / 9;
+  grid-row: 1 / 5;
+  font-size: 1.3em;
 }
 
 @media only screen and (max-width: 480px) {
@@ -242,8 +223,8 @@ a.tooltip {
 
 .introduction-box-right {
   display: grid;
-  grid-column: 9 / 13;
-  grid-row: 2 / 5;
+  grid-column: 10 / 12;
+  grid-row: 3 / 5;
 }
 
 @media only screen and (max-width: 480px) {
@@ -274,9 +255,10 @@ a.tooltip {
 
 .introduction-animation>img {
   width: 120vw;
-  max-width: 100%;
+  max-width: 200%;
   height: auto;
-  margin-top: 30vw;
+  margin-left: -10%;
+  margin-top: -25%;
 }
 
 @media only screen and (max-width: 480px) {
