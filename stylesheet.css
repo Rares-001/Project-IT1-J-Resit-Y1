@@ -729,23 +729,30 @@ footer {
 
         start aboutUs.html */
 
-.grid-container-aboutUs {
+.grid-container-AboutUs {
   display: grid;
   padding: 1vw;
   grid-template-columns: repeat(13, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 1fr);
 }
 
-.leftBox {
-  margin-top: 5vw;
-  grid-column: 2 / 9;
-  grid-row: 2 / 5;
+.navigation-menu-AboutUs {
+  display: flex;
+  grid-column: 1 / 14;
+  grid-row: 1;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10vw;
 }
 
-.leftPictureBox {
-  margin-top: 3vw;
-  grid-column: 10;
-  grid-row: 2;
+.graduationHat,
+.assignmentPic,
+.IT-img,
+.telecommunication-img {
+  margin: auto;
+  width: 280%;
+  max-width: 45vw;
+  height: auto;
 }
 
 .leftBox>p,
@@ -753,7 +760,11 @@ footer {
 .rightBox>p,
 .rightBox>h2,
 .leftBox-B>p,
-.leftBox-B>h2 {
+.leftBox-B>h2,
+.rightBox-B>p,
+.rightBox-B>h2,
+.centerBox>p,
+.centerBox>h2 {
   display: flex;
   font-family: Comic Sans MS, Comic Sans, cursive;
   font-weight: bold;
@@ -761,38 +772,56 @@ footer {
   padding: 0.5vw;
 }
 
+.leftBox {
+  grid-column: 2 / 9;
+  grid-row: 2 / 5;
+}
+
+.leftPictureBox {
+  grid-column: 10;
+  grid-row: 2;
+}
+
+
 .rightBox {
-  margin-top: 15vw;
   grid-column: 5 / 14;
   grid-row: 3;
 }
 
 .rightPictureBox {
-  margin-top: 10vw;
+  margin-top: -3vw;
   grid-column: 1;
   grid-row: 3;
 }
 
 .leftBox-B {
-  margin-top: 15vw;
   grid-column: 2 / 9;
   grid-row: 4;
 }
 
 .leftPictureBox-B {
-  margin-top: 11vw;
+  margin-top: -3vw;
   grid-column: 10;
   grid-row: 4;
 }
 
-.graduationHat,
-.assignmentPic,
-.IMG {
-  margin: auto;
-  width: 280%;
-  max-width: 45vw;
-  height: auto;
+.rightBox-B {
+  grid-column: 5 / 14;
+  grid-row: 5;
 }
+
+.rightPictureBox-B {
+  margin-top: -3vw;
+  grid-column: 1;
+  grid-row: 5;
+}
+
+.centerBox {
+  margin-top: 5vw;
+  grid-column: 2 / 14;
+  grid-row: 6 / 9;
+}
+
 
 
 /* End aboutUs.html 
