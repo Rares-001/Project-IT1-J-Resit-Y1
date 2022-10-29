@@ -730,17 +730,28 @@ footer {
         start aboutUs.html */
 
 .leftBox {
-  grid-column: 2 / 5;
-  grid-row: 2 / 4;
+  grid-column: 2 / 8;
+  grid-row: 3 / 5;
 }
 
-.leftText {
+.rightBox {
+  grid-column: 6 / 12;
+  grid-row: 6 / 8;
+}
+
+.leftText,
+.rightText {
   display: flex;
   font-size: 1.5em;
   font-family: Comic Sans MS, Comic Sans, cursive;
   font-weight: bold;
   color: #390055cb;
   padding: 0.5vw;
+}
+
+.rightPictureBox {
+  grid-column: 8;
+  grid-row: 4;
 }
 
 .graduationHat {
@@ -753,6 +764,50 @@ footer {
 /* End aboutUs.html 
 
         start administration.html */
+
+
+.grid-container-administration {
+  display: grid;
+  padding: 1vw;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+@media only screen and (max-width: 480px) {
+  .grid-container-administration {
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 40vw);
+  }
+}
+
+.imageOfBox {
+  display: grid;
+  grid-column: 3 / 9;
+  grid-row: 2 / 3;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.sub-imageOfBox .assignment,
+.school,
+.desk {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  max-width: 18vw;
+  height: auto;
+  margin: 15vw;
+}
+
+.text-image {
+  display: inline-flex;
+  justify-content: baseline;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
 
 .imageOfBox {
   display: flex;
