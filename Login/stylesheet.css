@@ -4,34 +4,34 @@ html {
 }
 
 .login-page {
-    padding: 20px;
-    margin: 15px;
+  padding: 20px;
+  margin: 15px;
 }
 
 .login-input {
-    outline: none;
-  	border: 1px solid purple;
-    width: 200px;
-    padding: 10px;
+  outline: none;
+  border: 1px solid purple;
+  width: 200px;
+  padding: 10px;
 }
 
 .arrow {
-    width: 10%;
-    height: 5%;
-    vertical-align: middle;
-    padding-left: 80px;
+  width: 10%;
+  height: 5%;
+  vertical-align: middle;
+  padding-left: 80px;
 }
 
 .grid-container {
   display: grid;
   padding: 1vw;
   grid-template-columns: repeat(13, 1fr);
-  grid-template-rows: repeat(20, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 ::placeholder {
-    text-align: center; 
- }
+  text-align: center;
+}
 
 @media only screen and (max-width: 480px) {
   .grid-container {
@@ -3019,4 +3019,3 @@ display: block;
 
 
 end */
-

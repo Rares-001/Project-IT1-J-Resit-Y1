@@ -889,3 +889,86 @@ footer {
   display: flex;
   grid-column: 3 / 4;
 }
+
+/* End administration.html 
+
+        start login.html */
+
+
+.grid-container-login {
+  display: grid;
+  padding: 1vw;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.navigation-menu-login {
+  display: flex;
+  grid-column: 1 / 14;
+  grid-row: 1;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10vw;
+}
+
+.login-page {
+  display: grid;
+  grid-column: 2 / 10;
+  grid-row: 2 / 6;
+  padding: 0.5vw;
+  margin-top: 10vw;
+}
+
+.login-form>h1 {
+  display: flex;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-weight: bold;
+  color: #390055cb;
+  font-size: 3.5em;
+}
+
+.input-boxes {
+  display: flex;
+  grid-column: 2 / 10;
+  grid-row: 2 / 6;
+
+}
+
+.login-input {
+  outline: none;
+  border: 1px solid purple;
+  height: 2vw;
+  width: 15vw;
+  font-size: 1.5em;
+}
+
+.arrow {
+  width: 10%;
+  height: 5%;
+  vertical-align: middle;
+  padding-left: 80px;
+}
+
+.login-gif img {
+  width: 150%;
+  max-width: 40vw;
+  height: auto;
+  margin: auto;
+}
+
+.login-gif {
+  grid-column: 10 / 12;
+  grid-row: 2 / 4;
+  margin-top: 6vw;
+}
+
+.grid-container-login {
+  display: grid;
+  padding: 1vw;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+::placeholder {
+  text-align: center;
+}
