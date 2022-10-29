@@ -729,37 +729,71 @@ footer {
 
         start aboutUs.html */
 
+.grid-container-aboutUs {
+  display: grid;
+  padding: 1vw;
+  grid-template-columns: repeat(13, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
 .leftBox {
-  grid-column: 2 / 8;
-  grid-row: 3 / 5;
+  margin-top: 5vw;
+  grid-column: 2 / 9;
+  grid-row: 2 / 5;
 }
 
-.rightBox {
-  grid-column: 6 / 12;
-  grid-row: 6 / 8;
+.leftPictureBox {
+  margin-top: 3vw;
+  grid-column: 10;
+  grid-row: 2;
 }
 
-.leftText,
-.rightText {
+.leftBox>p,
+.leftBox>h2,
+.rightBox>p,
+.rightBox>h2,
+.leftBox-B>p,
+.leftBox-B>h2 {
   display: flex;
-  font-size: 1.5em;
   font-family: Comic Sans MS, Comic Sans, cursive;
   font-weight: bold;
   color: #390055cb;
   padding: 0.5vw;
 }
 
+.rightBox {
+  margin-top: 15vw;
+  grid-column: 5 / 14;
+  grid-row: 3;
+}
+
 .rightPictureBox {
-  grid-column: 8;
+  margin-top: 10vw;
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.leftBox-B {
+  margin-top: 15vw;
+  grid-column: 2 / 9;
   grid-row: 4;
 }
 
-.graduationHat {
+.leftPictureBox-B {
+  margin-top: 11vw;
+  grid-column: 10;
+  grid-row: 4;
+}
+
+.graduationHat,
+.assignmentPic,
+.IMG {
   margin: auto;
-  width: 100%;
-  max-width: 18vw;
+  width: 280%;
+  max-width: 45vw;
   height: auto;
 }
+
 
 /* End aboutUs.html 
 
