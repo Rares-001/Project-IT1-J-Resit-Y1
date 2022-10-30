@@ -6,23 +6,37 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0,
         minimum-scale=1, maximum-scale=1">
-        <style type="text/css">
-        </style>
+        <link rel="stylesheet" type="text/css" href="FormsStyle.css">
     </head>
     <body>
-        <form action="Forms.php" method="post" name="form">
-            <input name="name" type="text" placeholder="Your name"/>
-            <br>
-            <input name="email" type="text" placeholder="Email"/>
-            <br>
-            <textarea cols="32" name="message" rows="5">Feedback text
-            </textarea>
-            <br>
-            <input type="submit" value="Submit" />
-        </form>
-        <br>
-        <p><a href="AboutUs.html">Go Back to About us Page</a></p>
 
+    <div class="GridForms">
+        <div class="Formbox">
+        <form action="Forms.php" method="post" name="form">
+            <div class="form">
+                <div>
+                    <h2>Feedback Form</h>
+                </div>
+                <div>
+                    <input name="name" type="text" placeholder="Your name" class="formInput"/>
+                </div>
+                <div>
+                    <input name="email" type="text" placeholder="Email" class="fromInput"/>
+                </div>
+                <div>
+                    <textarea cols="32" name="message" rows="5">Feedback text
+                    </textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Submit" class="formSubmit"/>
+                </div>
+                <div>
+                    <p><a href="AboutUs.html">Go Back to About us Page</a></p>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
         <?php 
         
         if(isset($_POST['Submit'])){
