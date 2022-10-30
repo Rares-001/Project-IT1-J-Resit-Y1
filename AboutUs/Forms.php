@@ -38,17 +38,24 @@
         </div>
     </div>
         <?php 
-        
+        // Checks to see if form Is properly filled in
         if(isset($_POST['Submit'])){
-            if(!empty($_POST['name']) and !empty($_POST['email']) and !empty($_POST['message'])){
 
+            // Checks if all fields are empty if not then proceed 
+            if(!empty($_POST['name']) and !empty($_POST['email']) and !empty($_POST['message'])){
+            
+                // Stores the text fields into the Variables 
                 $name = $_POST['name'];
                 $email = $_POST['email'];
                 $message = $_POST['message'];
-
+                
+                //Checks if Name is longer then 3 characters 
                 if(strlen($_POST['name'])>= 3){
+                    //Checks if Email contains the character @
                     if(str_contains($_POST['email'], "@" )){
+                        //Lastly checks if the feedback fields has 20 Characters or more
                         if(strlen($_POST['message'])>= 20){
+                            // Successfully filled the form 
                             echo "FeedBack has been sent.";
                             echo "Thank you for filling in the form";
                         }else{
